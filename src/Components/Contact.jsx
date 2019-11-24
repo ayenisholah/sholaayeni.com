@@ -114,7 +114,7 @@ function Contact(props) {
                         <Form
                             action="/success"
                             name="contact"
-                            method="POST"
+                            method="post"
                             data-netlify="true"
                             data-netlify-honeypot="bot-field"
                         >
@@ -153,7 +153,7 @@ function Contact(props) {
                             <Button type="submit">Send</Button>
                         </Form>
                         <div className="field">
-                            <div data-netlify-recaptcha="True"></div>
+                            <div data-netlify-recaptcha="true"></div>
                         </div>
                     </div>
                 </div>
