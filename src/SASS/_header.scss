@@ -1,0 +1,99 @@
+.header {
+    width: 100%;
+    min-height: 15vh;
+    background-color: $header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    max-width: 1200px;
+    width: 73vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: $mainFont;
+    font-family: "Varela Round", sans-serif;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    .title {
+        max-width: 400px;
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 800px) {
+                font-size: 3rem !important;
+            }
+            @media (max-width: 450px) {
+                font-size: 3rem !important;
+            }
+        }
+        .Typist {
+            font-size: 2rem;
+            @media screen and (max-width: 800px) {
+                font-size: 1.65rem !important;
+            }
+        }
+    }
+
+    .menu {
+        max-width: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.8rem;
+            opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+                transition: opacity 0.3s ease-in-out;
+            }
+
+            @media (max-width: 800px) {
+                margin-top: 10px;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            max-width: 300px;
+            a {
+                font-size: 1.3rem;
+            }
+        }
+
+        .active {
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            opacity: 1;
+        }
+
+        .button-container {
+            width: 20px;
+            max-height: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+
+                &:hover {
+                    filter: brightness(10);
+                }
+            }
+        }
+    }
+}
