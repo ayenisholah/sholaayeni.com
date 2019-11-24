@@ -116,7 +116,7 @@ function Contact(props) {
               data-netlify="true"
               netlify
               netlify-honeypot="bot-field"
-              action="/src/Components/success.jsx"
+              action="/success"
             >
               <input type="hidden" name="form-name" value="contact" />
 
