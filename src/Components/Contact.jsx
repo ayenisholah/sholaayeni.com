@@ -96,7 +96,7 @@ const ContactSection = styled.section`
 
 const darkModeSettings = {
     color: `rgb(233, 233, 233)`,
-    backgroundColor: "rgb(23, 23, 35"
+    backgroundColor: "rgb(23, 23, 35)"
 };
 
 function Contact(props) {
@@ -152,6 +152,9 @@ function Contact(props) {
                             />
                             <Button type="submit">Send</Button>
                         </Form>
+                        <div className="field">
+                            <div data-netlify-recaptcha="True"></div>
+                        </div>
                     </div>
                 </div>
             </ContactSection>
